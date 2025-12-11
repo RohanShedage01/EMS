@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mark Attendance</title>
+
+    <link rel="stylesheet" href="/css/make-attendance.css" />
+</head>
+<body>
+
+<div class="header">Employee Management System</div>
+
+<div class="container">
+
+    <h2>Mark Attendance</h2>
+
+    <form id="attendanceForm">
+
+        <label>Select Employee</label>
+        <select id="employeeName">
+            <option value="">-- Choose Employee --</option>
+            <option>Rohan</option>
+            <option>Sagar</option>
+            <option>Prachi</option>
+            <option>Amit</option>
+            <option>Neha</option>
+            <option>Rahul</option>
+        </select>
+
+        <label>Select Date</label>
+        <input type="date" id="attDate">
+
+        <label>Attendance Status</label>
+        <select id="attStatus">
+            <option value="">-- Choose Status --</option>
+            <option value="Present">Present</option>
+            <option value="Absent">Absent</option>
+        </select>
+
+        <button type="submit" class="submit-btn">Submit Attendance</button>
+
+    </form>
+
+    <a class="back-link" href="attendance.html">← Back to Attendance Section</a>
+
+</div>
+
+<script src="/js/make-attendance.js"></script>
+
+</body>
+</html>

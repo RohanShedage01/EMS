@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Attendance Section</title>
+
+  <link rel="stylesheet" href="/css/attendance.css" />
+</head>
+
+<body>
+
+<div class="header">Employee Management System</div>
+
+<div class="container">
+
+    <div class="top-bar">
+        <h2>Attendance Section</h2>
+        <button onclick="location.href='make-attendance.html'" class="add-btn">
+    + Mark Attendance
+</button>
+
+    </div>
+
+    <!-- ATTENDANCE TABLE -->
+    <table class="attendance-table">
+        <thead>
+            <tr>
+                <th>Sr No</th>
+                <th>Employee Name</th>
+                <th>Date</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+
+        <tbody id="attendanceBody">
+            <!-- JS will insert rows -->
+        </tbody>
+    </table>
+
+    <a href="dashboard.html" class="back-link">← Back to Dashboard</a>
+
+</div>
+
+<script src="/js/attendance.js"></script>
+
+</body>
+</html>

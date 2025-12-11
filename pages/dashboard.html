@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Management System - Dashboard</title>
+    <link rel="stylesheet" href="/css/dashboard.css" />
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>EMS</h2>
+        <ul>
+            <li class="active">Dashboard</li>
+            <li onclick="location.href='employee-list.html'">Employees</li>
+            <li onclick="location.href='department.html'">Department</li>
+            <li onclick="location.href='attendance.html'">Attendance</li>
+            <li>Settings</li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        
+        <div class="topbar">
+            <h2>Dashboard</h2>
+            <div class="profile">
+                <img src="https://i.pravatar.cc/40" alt="User">
+            </div>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Total Employees</h3>
+                <p id="empCount">6</p>
+            </div>
+            <div class="card">
+                <h3>Active Employees</h3>
+                <p>5</p>
+            </div>
+            <div class="card">
+                <h3>Departments</h3>
+                <p>5</p>
+            </div>
+            <div class="card">
+                <h3>On Leave Today</h3>
+                <p>1</p>
+            </div>
+        </div>
+
+        <h3 class="section-title">Employee List</h3>
+
+        <table class="employee-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="empTable">
+            </tbody>
+        </table>
+    </div>
+
+<script src="/js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add Department</title>
+
+  <link rel="stylesheet" href="/css/add-department.css" />
+</head>
+
+<body>
+
+<div class="header">Employee Management System</div>
+
+<div class="container">
+
+    <h2>Add New Department</h2>
+
+    <form id="departmentForm">
+        
+        <label>Department Name</label>
+        <input type="text" id="deptName" placeholder="Enter department name">
+
+        <label>Total Employees</label>
+        <input type="number" id="deptEmployees" placeholder="Enter total employees">
+
+        <label>Description</label>
+        <textarea id="deptDesc" placeholder="Department responsibilities"></textarea>
+
+        <button type="submit" class="submit-btn">Add Department</button>
+    </form>
+
+    <a href="department.html" class="back-link">← Back to Department Section</a>
+
+</div>
+
+<script src="/js/add-department.js"></script>
+
+</body>
+</html>

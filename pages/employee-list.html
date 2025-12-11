@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee List - EMS</title>
+    <link rel="stylesheet" href="/css/employee-list.css" />
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Employee List</h2>
+
+    <!-- Search and Filter Section -->
+    <div class="search-filter">
+
+        <input type="text" id="searchInput" placeholder="Search employee by name...">
+
+        <select id="deptFilter">
+            <option value="">All Departments</option>
+            <option>IT</option>
+            <option>HR</option>
+            <option>Finance</option>
+            <option>Sales</option>
+            <option>Admin</option>
+        </select>
+
+        <select id="statusFilter">
+            <option value="">All Status</option>
+            <option>Active</option>
+            <option>On Leave</option>
+            <option>Inactive</option>
+        </select>
+    </div>
+
+    <!-- Employee Table -->
+    <table class="employee-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody id="empTable">
+        </tbody>
+    </table>
+
+</div>
+
+<script src="/js/employee-list.js"></script>
+</body>
+</html>
