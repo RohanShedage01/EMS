@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings</title>
+
+    <link rel="stylesheet" href="/css/settings.css" />
+</head>
+
+<body>
+
+<div class="header">Employee Management System</div>
+
+<div class="container">
+
+    <h2>Settings</h2>
+
+    <div class="settings-box">
+
+        <!-- PROFILE SETTINGS -->
+        <div class="setting-item">
+            <h3>Profile Settings</h3>
+
+            <label>Full Name</label>
+            <input type="text" id="fullName" placeholder="Enter full name">
+
+            <label>Email</label>
+            <input type="email" id="email" placeholder="Enter email">
+
+            <button class="save-btn" onclick="saveProfile()">Save Profile</button>
+        </div>
+
+        <!-- PASSWORD CHANGE -->
+        <div class="setting-item">
+            <h3>Change Password</h3>
+
+            <label>Old Password</label>
+            <input type="password" id="oldPass">
+
+            <label>New Password</label>
+            <input type="password" id="newPass">
+
+            <button class="save-btn" onclick="changePassword()">Update Password</button>
+        </div>
+
+        <!-- THEME -->
+        <div class="setting-item">
+            <h3>Theme Mode</h3>
+
+            <label class="switch">
+                <input type="checkbox" id="themeToggle" onchange="toggleTheme()">
+                <span class="slider round"></span>
+            </label>
+            <p>Enable Dark Mode</p>
+        </div>
+
+        <!-- NOTIFICATIONS -->
+        <div class="setting-item">
+            <h3>Notifications</h3>
+
+            <label class="check-container">
+                Email Notifications
+                <input type="checkbox" id="emailNotify">
+                <span class="checkmark"></span>
+            </label>
+
+            <label class="check-container">
+                SMS Notifications
+                <input type="checkbox" id="smsNotify">
+                <span class="checkmark"></span>
+            </label>
+
+            <button class="save-btn" onclick="saveNotifications()">Save</button>
+        </div>
+
+    </div>
+
+    <a href="dashboard.html" class="back-link">← Back to Dashboard</a>
+
+</div>
+
+<script src="/js/settings.js"></script>
+
+</body>
+</html>
